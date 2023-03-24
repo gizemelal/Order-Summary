@@ -1,80 +1,9 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box; }
-
-html, body {
-  height: 90%; }
-
-body {
-  background: url(/images/pattern-background-desktop.svg) no-repeat center top;
-  background-size: 100%;
-  background-color: #e0e8ff; }
-
-.container {
-  margin: 70px auto;
-  max-width: 360px;
-  overflow: auto;
-  background-color: #fff;
-  text-align: center;
-  border-radius: 16px;
-  overflow: hidden;
-  margin-bottom: 20px; }
-
-.img {
-  background: url(/images/illustration-hero.svg) no-repeat center center/cover;
-  height: 200px;
-  background-position: top; }
-
-.content-box {
-  font-family: 'Red Hat Display';
-  padding: 30px;
-  line-height: 1.2; }
-  .content-box h1 {
-    font-size: 1.5rem;
-    margin: 0;
-    margin-bottom: 20px;
-    font-weight: 900; }
-  .content-box p {
-    color: #7280a7;
-    line-height: 1.6;
-    margin-bottom: 30px; }
-
-.plan {
-  padding: 15px;
-  width: 100%;
-  height: 100px;
-  display: grid;
-  grid-auto-flow: column;
-  align-items: center;
-  background-color: #f5f7ff;
-  margin-bottom: 30px;
-  border-radius: 12px; }
-  .plan .plan-content {
-    font-size: 10px;
-    margin: 0; }
-  .plan p {
-    margin: 0;
-    font-size: 14px; }
-  .plan .svg {
-    display: block;
-    background: url(/images/icon-music.svg) no-repeat center;
-    width: 50px;
-    height: 50px;
-    margin: 0; }
-  .plan .change-btn {
-    color: #3829e0;
-    font-weight: 700; }
-    .plan .change-btn:hover {
-      text-decoration: none;
-      opacity: .7; }
-
 .btn-dark, .btn-light {
   display: block;
   text-decoration: none;
   width: 300px;
   text-align: center;
-  padding: 15px;
+  padding: 1rem;
   border: none;
   margin: 0;
   border-radius: 10px;
@@ -91,3 +20,77 @@ body {
 .btn-light {
   border: none;
   color: #7280a7; }
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; }
+
+body {
+  background: url(/images/pattern-background-desktop.svg) no-repeat center top;
+  background-size: 100%;
+  background-color: #e0e8ff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center; }
+
+main {
+  max-width: 360px;
+  background-color: #fff;
+  text-align: center;
+  border-radius: 1rem; }
+
+  main .img {
+    background: url(/images/illustration-hero.svg) no-repeat center center/cover;
+    height: 200px;
+    background-position: top;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem; }
+
+  main .content-box {
+    font-family: 'Red Hat Display';
+    padding: 2rem;
+    line-height: 1.2; }
+
+    main .content-box h1 {
+      font-size: 1.5rem;
+      margin: 0;
+      margin-bottom: 1rem;
+      font-weight: 900; }
+
+    main .content-box p {
+      color: #7280a7;
+      line-height: 1.6;
+      margin-bottom: 1rem; }
+
+    main .content-box .plan {
+      padding: 0 .7rem;
+      width: 100%;
+      height: 85px;
+      display: grid;
+      grid-template-columns: 60px 100px 1fr;
+      align-items: center;
+      background-color: #f5f7ff;
+      margin-bottom: 1.5rem;
+      border-radius: 1rem; }
+
+      main .content-box .plan .svg {
+        display: block;
+        background: url(/images/icon-music.svg) no-repeat center;
+        width: 50px;
+        height: 50px;
+        margin: 0; }
+
+      main .content-box .plan .plan-content {
+        font-size: .7rem;
+        font-weight: 700;
+        margin: 0; }
+
+      main .content-box .plan .change-btn {
+        color: #3829e0;
+        font-weight: 700;
+        text-decoration: none; }
+
+        main .content-box .plan .change-btn:hover {
+          opacity: .7; }
